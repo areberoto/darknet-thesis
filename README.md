@@ -1,3 +1,9 @@
+# About this repository
+
+This repository should have been forked from https://github.com/AlexeyAB/darknet, but at the time I started working on this project I was a beginner using git, thus I didn't to that. Since all my work was already done on this cloned repository, I decided to push it to this personal repository.
+
+
+
 # Yolo v4, v3 and v2 for Windows and Linux
 
 ## (neural networks for object detection)
@@ -7,12 +13,14 @@ Paper YOLO v4: https://arxiv.org/abs/2004.10934
 Paper Scaled YOLO v4: https://arxiv.org/abs/2011.08036  use to reproduce results: [ScaledYOLOv4](https://github.com/WongKinYiu/ScaledYOLOv4)
 
 More details in articles on medium: 
+
  * [Scaled_YOLOv4](https://alexeyab84.medium.com/scaled-yolo-v4-is-the-best-neural-network-for-object-detection-on-ms-coco-dataset-39dfa22fa982?source=friends_link&sk=c8553bfed861b1a7932f739d26f487c8) 
  * [YOLOv4](https://medium.com/@alexeyab84/yolov4-the-most-accurate-real-time-neural-network-on-ms-coco-dataset-73adfd3602fe?source=friends_link&sk=6039748846bbcf1d960c3061542591d7) 
 
 Manual: https://github.com/AlexeyAB/darknet/wiki
 
 Discussion: 
+
  - [Reddit](https://www.reddit.com/r/MachineLearning/comments/gydxzd/p_yolov4_the_most_accurate_realtime_neural/)
  - [Google-groups](https://groups.google.com/forum/#!forum/darknet)
  - [Discord](https://discord.gg/zSq8rtW)
@@ -66,18 +74,20 @@ About Darknet framework: http://pjreddie.com/darknet/
 
 
 tkDNN-TensorRT accelerates YOLOv4 **~2x** times for batch=1 and **3x-4x** times for batch=4.
+
 * tkDNN: https://github.com/ceccocats/tkDNN
 * OpenCV: https://gist.github.com/YashasSamaga/48bdb167303e10f4d07b754888ddbdcf
 
 #### GeForce RTX 2080 Ti:
-| Network Size 	| Darknet, FPS (avg)| tkDNN TensorRT FP32, FPS  | tkDNN TensorRT FP16, FPS  | OpenCV FP16, FPS | tkDNN TensorRT FP16 batch=4, FPS  | OpenCV FP16 batch=4, FPS | tkDNN Speedup |
-|:-----:|:--------:|--------:|--------:|--------:|--------:|--------:|------:|
-|320	| 100 | 116 | **202** | 183 | 423 | **430** | **4.3x** |
-|416	| 82 | 103 | **162** | 159 | 284 | **294** | **3.6x** |
-|512	| 69 | 91 | 134 | **138** | 206 | **216** | **3.1x** |
-|608 	| 53 | 62 | 103 | **115**| 150 | **150** | **2.8x**  |
-|Tiny 416 | 443 | 609 | **790** | 773 | **1774** | 1353 | **3.5x**  |
-|Tiny 416 CPU Core i7 7700HQ | 3.4 | - | - | 42 | - | 39 | **12x**  |
+
+|        Network Size         | Darknet, FPS (avg) | tkDNN TensorRT FP32, FPS | tkDNN TensorRT FP16, FPS | OpenCV FP16, FPS | tkDNN TensorRT FP16 batch=4, FPS | OpenCV FP16 batch=4, FPS | tkDNN Speedup |
+| :-------------------------: | :----------------: | -----------------------: | -----------------------: | ---------------: | -------------------------------: | -----------------------: | ------------: |
+|             320             |        100         |                      116 |                  **202** |              183 |                              423 |                  **430** |      **4.3x** |
+|             416             |         82         |                      103 |                  **162** |              159 |                              284 |                  **294** |      **3.6x** |
+|             512             |         69         |                       91 |                      134 |          **138** |                              206 |                  **216** |      **3.1x** |
+|             608             |         53         |                       62 |                      103 |          **115** |                              150 |                  **150** |      **2.8x** |
+|          Tiny 416           |        443         |                      609 |                  **790** |              773 |                         **1774** |                     1353 |      **3.5x** |
+| Tiny 416 CPU Core i7 7700HQ |        3.4         |                        - |                        - |               42 |                                - |                       39 |       **12x** |
 
 * Yolo v4 Full comparison: [map_fps](https://user-images.githubusercontent.com/4096485/80283279-0e303e00-871f-11ea-814c-870967d77fd1.png)
 * Yolo v4 tiny comparison: [tiny_fps](https://user-images.githubusercontent.com/4096485/85734112-6e366700-b705-11ea-95d1-fcba0de76d72.png)
@@ -89,8 +99,8 @@ tkDNN-TensorRT accelerates YOLOv4 **~2x** times for batch=1 and **3x-4x** times 
 
 #### Youtube video of results
 
-| [![Yolo v4](https://user-images.githubusercontent.com/4096485/101360000-1a33cf00-38ae-11eb-9e5e-b29c5fb0afbe.png)](https://youtu.be/1_SiUOYUoOI "Yolo v4") |  [![Scaled Yolo v4](https://user-images.githubusercontent.com/4096485/101359389-43a02b00-38ad-11eb-866c-f813e96bf61a.png)](https://youtu.be/YDFf-TqJOFE "Scaled Yolo v4") |
-|---|---|
+| [![Yolo v4](https://user-images.githubusercontent.com/4096485/101360000-1a33cf00-38ae-11eb-9e5e-b29c5fb0afbe.png)](https://youtu.be/1_SiUOYUoOI "Yolo v4") | [![Scaled Yolo v4](https://user-images.githubusercontent.com/4096485/101359389-43a02b00-38ad-11eb-866c-f813e96bf61a.png)](https://youtu.be/YDFf-TqJOFE "Scaled Yolo v4") |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 Others: https://www.youtube.com/user/pjreddie/videos
 
@@ -123,9 +133,9 @@ eval=coco
 4. Run one of two commands and look at the AVG FPS:
 
 * include video_capturing + NMS + drawing_bboxes: 
-    `./darknet detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights test.mp4 -dont_show -ext_output`
+  `./darknet detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights test.mp4 -dont_show -ext_output`
 * exclude video_capturing + NMS + drawing_bboxes: 
-    `./darknet detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights test.mp4 -benchmark`
+  `./darknet detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights test.mp4 -benchmark`
 
 #### Pre-trained models
 
@@ -134,17 +144,20 @@ There are weights-file for different cfg-files (trained for MS COCO dataset):
 FPS on RTX 2070 (R) and Tesla V100 (V):
 
 * [yolov4x-mish.cfg](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4x-mish.cfg) - 640x640 - **67.9% mAP@0.5 (49.4% AP@0.5:0.95) - 23(R) FPS / 50(V) FPS** - 221 BFlops (110 FMA) - 381 MB: [yolov4x-mish.weights](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4x-mish.weights) 
-   * pre-trained weights for training: https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4x-mish.conv.166
+
+  * pre-trained weights for training: https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4x-mish.conv.166
 
 * [yolov4-csp.cfg](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4-csp.cfg) - 202 MB: [yolov4-csp.weights](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-csp.weights) paper [Scaled Yolo v4](https://arxiv.org/abs/2011.08036)
 
-    just change `width=` and `height=` parameters in `yolov4-csp.cfg` file and use the same `yolov4-csp.weights` file for all cases:
+  just change `width=` and `height=` parameters in `yolov4-csp.cfg` file and use the same `yolov4-csp.weights` file for all cases:
+
   * `width=640 height=640` in cfg: **66.2% mAP@0.5 (47.5% AP@0.5:0.95) - 70(V) FPS** - 120 (60 FMA) BFlops
   * `width=512 height=512` in cfg: **64.8% mAP@0.5 (46.2% AP@0.5:0.95) - 93(V) FPS** - 77 (39 FMA) BFlops
    * pre-trained weights for training: https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-csp.conv.142
-   
+
 * [yolov4.cfg](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4.cfg) - 245 MB: [yolov4.weights](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights) (Google-drive mirror [yolov4.weights](https://drive.google.com/open?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT) ) paper [Yolo v4](https://arxiv.org/abs/2004.10934)
-    just change `width=` and `height=` parameters in `yolov4.cfg` file and use the same `yolov4.weights` file for all cases:
+  just change `width=` and `height=` parameters in `yolov4.cfg` file and use the same `yolov4.weights` file for all cases:
+
   * `width=608 height=608` in cfg: **65.7% mAP@0.5 (43.5% AP@0.5:0.95) - 34(R) FPS / 62(V) FPS** - 128.5 BFlops
   * `width=512 height=512` in cfg: **64.9% mAP@0.5 (43.0% AP@0.5:0.95) - 45(R) FPS / 83(V) FPS** - 91.1 BFlops
   * `width=416 height=416` in cfg: **62.8% mAP@0.5 (41.2% AP@0.5:0.95) - 55(R) FPS / 96(V) FPS** - 60.1 BFlops
@@ -157,6 +170,7 @@ FPS on RTX 2070 (R) and Tesla V100 (V):
 * [yolov3-openimages.cfg](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov3-openimages.cfg) - 247 MB - 18(R) FPS - OpenImages dataset: [yolov3-openimages.weights](https://pjreddie.com/media/files/yolov3-openimages.weights)
 
 <details><summary><b>CLICK ME</b> - Yolo v3 models</summary>
+
 
 * [csresnext50-panet-spp-original-optimal.cfg](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/csresnext50-panet-spp-original-optimal.cfg) - **65.4% mAP@0.5 (43.2% AP@0.5:0.95) - 32(R) FPS** - 100.5 BFlops - 217 MB: [csresnext50-panet-spp-original-optimal_final.weights](https://drive.google.com/open?id=1_NnfVgj0EDtb_WLNoXV8Mo7WKgwdYZCc)
 
@@ -173,6 +187,7 @@ FPS on RTX 2070 (R) and Tesla V100 (V):
 </details>
 
 <details><summary><b>CLICK ME</b> - Yolo v2 models</summary>
+
 
 * `yolov2.cfg` (194 MB COCO Yolo v2) - requires 4 GB GPU-RAM: https://pjreddie.com/media/files/yolov2.weights
 * `yolo-voc.cfg` (194 MB VOC Yolo v2) - requires 4 GB GPU-RAM: http://pjreddie.com/media/files/yolo-voc.weights
@@ -200,19 +215,19 @@ You can get cfg-files by path: `darknet/cfg/`
 
 * **Pytorch - Scaled-YOLOv4:** https://github.com/WongKinYiu/ScaledYOLOv4
 * **TensorFlow:** `pip install yolov4` YOLOv4 on TensorFlow 2.0 / TFlite / Andriod: https://github.com/hunglc007/tensorflow-yolov4-tflite
-    Official TF models: https://github.com/tensorflow/models/tree/master/official/vision/beta/projects/yolo
-    For YOLOv4 - convert `yolov4.weights`/`cfg` files to `yolov4.pb` by using [TNTWEN](https://github.com/TNTWEN/OpenVINO-YOLOV4) project, and to `yolov4.tflite` [TensorFlow-lite](https://www.tensorflow.org/lite/guide/get_started#2_convert_the_model_format)
+  Official TF models: https://github.com/tensorflow/models/tree/master/official/vision/beta/projects/yolo
+  For YOLOv4 - convert `yolov4.weights`/`cfg` files to `yolov4.pb` by using [TNTWEN](https://github.com/TNTWEN/OpenVINO-YOLOV4) project, and to `yolov4.tflite` [TensorFlow-lite](https://www.tensorflow.org/lite/guide/get_started#2_convert_the_model_format)
 * **OpenCV-dnn** the fastest implementation of YOLOv4 for CPU (x86/ARM-Android), OpenCV can be compiled with [OpenVINO-backend](https://github.com/opencv/opencv/wiki/Intel's-Deep-Learning-Inference-Engine-backend) for running on (Myriad X / USB Neural Compute Stick / Arria FPGA), use `yolov4.weights`/`cfg` with: [C++ example](https://github.com/opencv/opencv/blob/8c25a8eb7b10fb50cda323ee6bec68aa1a9ce43c/samples/dnn/object_detection.cpp#L192-L221) or [Python example](https://github.com/opencv/opencv/blob/8c25a8eb7b10fb50cda323ee6bec68aa1a9ce43c/samples/dnn/object_detection.py#L129-L150)
 * **Intel OpenVINO 2021.2:** supports YOLOv4 (NPU Myriad X / USB Neural Compute Stick / Arria FPGA): https://devmesh.intel.com/projects/openvino-yolov4-49c756 read this [manual](https://github.com/TNTWEN/OpenVINO-YOLOV4) (old [manual](https://software.intel.com/en-us/articles/OpenVINO-Using-TensorFlow#converting-a-darknet-yolo-model) )
 * **Tencent/ncnn:** the fastest inference of YOLOv4 on mobile phone CPU: https://github.com/Tencent/ncnn
 * **PyTorch > ONNX**: 
-    * [WongKinYiu/PyTorch_YOLOv4](https://github.com/WongKinYiu/PyTorch_YOLOv4)
-    * [maudzung/3D-YOLOv4](https://github.com/maudzung/Complex-YOLOv4-Pytorch)
-    * [Tianxiaomo/pytorch-YOLOv4](https://github.com/Tianxiaomo/pytorch-YOLOv4)
-    * [YOLOv5](https://github.com/ultralytics/yolov5)
+  * [WongKinYiu/PyTorch_YOLOv4](https://github.com/WongKinYiu/PyTorch_YOLOv4)
+  * [maudzung/3D-YOLOv4](https://github.com/maudzung/Complex-YOLOv4-Pytorch)
+  * [Tianxiaomo/pytorch-YOLOv4](https://github.com/Tianxiaomo/pytorch-YOLOv4)
+  * [YOLOv5](https://github.com/ultralytics/yolov5)
 * **ONNX** on Jetson for YOLOv4: https://developer.nvidia.com/blog/announcing-onnx-runtime-for-jetson/
 * **TensorRT** YOLOv4 on TensorRT+tkDNN: https://github.com/ceccocats/tkDNN
-    For YOLOv3 (-70% faster inference): [Yolo is natively supported in DeepStream 4.0](https://news.developer.nvidia.com/deepstream-sdk-4-now-available/) read [PDF](https://docs.nvidia.com/metropolis/deepstream/Custom_YOLO_Model_in_the_DeepStream_YOLO_App.pdf). [jkjung-avt/tensorrt_demos](https://github.com/jkjung-avt/tensorrt_demos) or [wang-xinyu/tensorrtx](https://github.com/wang-xinyu/tensorrtx) implemented yolov3-spp, yolov4, etc.
+  For YOLOv3 (-70% faster inference): [Yolo is natively supported in DeepStream 4.0](https://news.developer.nvidia.com/deepstream-sdk-4-now-available/) read [PDF](https://docs.nvidia.com/metropolis/deepstream/Custom_YOLO_Model_in_the_DeepStream_YOLO_App.pdf). [jkjung-avt/tensorrt_demos](https://github.com/jkjung-avt/tensorrt_demos) or [wang-xinyu/tensorrtx](https://github.com/wang-xinyu/tensorrtx) implemented yolov3-spp, yolov4, etc.
 * **Deepstream 5.0 / TensorRT for YOLOv4** https://github.com/NVIDIA-AI-IOT/yolov4_deepstream or https://github.com/marcoslucianops/DeepStream-Yolo
 * **Triton Inference Server / TensorRT** https://github.com/isarsoft/yolov4-triton-tensorrt
 * **Xilinx Zynq Ultrascale+ Deep Learning Processor (DPU) ZCU102/ZCU104:** https://github.com/Xilinx/Vitis-In-Depth-Tutorial/tree/master/Machine_Learning/Design_Tutorials/07-yolov4-tutorial
@@ -276,15 +291,15 @@ On Linux find executable file `./darknet` in the root directory, while on Window
 * Yolo v3 Tiny **on GPU #1**: `darknet.exe detector demo cfg/coco.data cfg/yolov3-tiny.cfg yolov3-tiny.weights -i 1 test.mp4`
 * Alternative method Yolo v3 COCO - image: `darknet.exe detect cfg/yolov4.cfg yolov4.weights -i 0 -thresh 0.25`
 * Train on **Amazon EC2**, to see mAP & Loss-chart using URL like: `http://ec2-35-160-228-91.us-west-2.compute.amazonaws.com:8090` in the Chrome/Firefox (**Darknet should be compiled with OpenCV**): 
-    `./darknet detector train cfg/coco.data yolov4.cfg yolov4.conv.137 -dont_show -mjpeg_port 8090 -map`
+  `./darknet detector train cfg/coco.data yolov4.cfg yolov4.conv.137 -dont_show -mjpeg_port 8090 -map`
 * 186 MB Yolo9000 - image: `darknet.exe detector test cfg/combine9k.data cfg/yolo9000.cfg yolo9000.weights`
 * Remeber to put data/9k.tree and data/coco9k.map under the same folder of your app if you use the cpp api to build an app
 * To process a list of images `data/train.txt` and save results of detection to `result.json` file use: 
-    `darknet.exe detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights -ext_output -dont_show -out result.json < data/train.txt`
+  `darknet.exe detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights -ext_output -dont_show -out result.json < data/train.txt`
 * To process a list of images `data/train.txt` and save results of detection to `result.txt` use:                             
-    `darknet.exe detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights -dont_show -ext_output < data/train.txt > result.txt`
+  `darknet.exe detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights -dont_show -ext_output < data/train.txt > result.txt`
 * Pseudo-lableing - to process a list of images `data/new_train.txt` and save results of detection in Yolo training format for each image as label `<image_name>.txt` (in this way you can increase the amount of training data) use:
-    `darknet.exe detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights -thresh 0.25 -dont_show -save_labels < data/new_train.txt`
+  `darknet.exe detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights -thresh 0.25 -dont_show -save_labels < data/new_train.txt`
 * To calculate anchors: `darknet.exe detector calc_anchors data/obj.data -num_of_clusters 9 -width 416 -height 416`
 * To check accuracy mAP@IoU=50: `darknet.exe detector map data/obj.data yolo-obj.cfg backup\yolo-obj_7000.weights`
 * To check accuracy mAP@IoU=75: `darknet.exe detector map data/obj.data yolo-obj.cfg backup\yolo-obj_7000.weights -iou_thresh 0.75`
@@ -293,8 +308,8 @@ On Linux find executable file `./darknet` in the root directory, while on Window
 
 1. Download for Android phone mjpeg-stream soft: IP Webcam / Smart WebCam
 
-    * Smart WebCam - preferably: https://play.google.com/store/apps/details?id=com.acontech.android.SmartWebCam2
-    * IP Webcam: https://play.google.com/store/apps/details?id=com.pas.webcam
+   * Smart WebCam - preferably: https://play.google.com/store/apps/details?id=com.acontech.android.SmartWebCam2
+   * IP Webcam: https://play.google.com/store/apps/details?id=com.pas.webcam
 
 2. Connect your Android phone to computer by WiFi (through a WiFi-router) or USB
 3. Start Smart WebCam on your phone
@@ -324,9 +339,9 @@ Before make, you can set such options in the `Makefile`: [link](https://github.c
 * `DEBUG=1` to bould debug version of Yolo
 * `OPENMP=1` to build with OpenMP support to accelerate Yolo by using multi-core CPU
 * `LIBSO=1` to build a library `darknet.so` and binary runable file `uselib` that uses this library. Or you can try to run so `LD_LIBRARY_PATH=./:$LD_LIBRARY_PATH ./uselib test.mp4` How to use this SO-library from your own code - you can look at C++ example: https://github.com/AlexeyAB/darknet/blob/master/src/yolo_console_dll.cpp
-    or use in such a way: `LD_LIBRARY_PATH=./:$LD_LIBRARY_PATH ./uselib data/coco.names cfg/yolov4.cfg yolov4.weights test.mp4`
+  or use in such a way: `LD_LIBRARY_PATH=./:$LD_LIBRARY_PATH ./uselib data/coco.names cfg/yolov4.cfg yolov4.weights test.mp4`
 * `ZED_CAMERA=1` to build a library with ZED-3D-camera support (should be ZED SDK installed), then run
-    `LD_LIBRARY_PATH=./:$LD_LIBRARY_PATH ./uselib data/coco.names cfg/yolov4.cfg yolov4.weights zed_camera`
+  `LD_LIBRARY_PATH=./:$LD_LIBRARY_PATH ./uselib data/coco.names cfg/yolov4.cfg yolov4.weights zed_camera`
 * You also need to specify for which graphics card the code is generated. This is done by setting `ARCH=`. If you use a never version than CUDA 11 you further need to edit line 20 from Makefile and remove `-gencode arch=compute_30,code=sm_30 \` as Kepler GPU support was dropped in CUDA 11. You can also drop the general `ARCH=` and just uncomment `ARCH=` for your graphics card.
 
 To run Darknet on Linux use examples from this article, just use `./darknet` instead of `darknet.exe`, i.e. use this command: `./darknet detector test ./cfg/coco.data ./cfg/yolov4.cfg ./yolov4.weights`
@@ -334,6 +349,7 @@ To run Darknet on Linux use examples from this article, just use `./darknet` ins
 ### How to compile on Windows (using `CMake`)
 
 Requires: 
+
 * MSVS: https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community
 * Cmake GUI: `Windows win64-x64 Installer`https://cmake.org/download/
 * Download Darknet zip-archive with the latest commit and uncompress it: [master.zip](https://github.com/AlexeyAB/darknet/archive/master.zip)
@@ -414,9 +430,9 @@ Training Yolo v4 (and v3):
   * https://github.com/AlexeyAB/darknet/blob/6e5bdf1282ad6b06ed0e962c3f5be67cf63d96dc/cfg/Gaussian_yolov3_BDD.cfg#L789
 
 So if `classes=1` then should be `filters=18`. If `classes=2` then write `filters=21`.
-  
+
 **(Do not write in the cfg-file: filters=(classes + 5)x3)**
-  
+
 (Generally `filters` depends on the `classes`, `coords` and number of `mask`s, i.e. filters=`(classes + coords + 1)*<number of mask>`, where `mask` is indices of anchors. If `mask` is absence, then filters=`(classes + coords + 1)*num`)
 
 So for example, for 2 objects, your file `yolo-obj.cfg` should differ from `yolov4-custom.cfg` in such lines in each of **3** [yolo]-layers:
@@ -434,11 +450,11 @@ classes=2
 3. Create file `obj.data` in the directory `build\darknet\x64\data\`, containing (where **classes = number of objects**):
 
   ```ini
-  classes = 2
-  train  = data/train.txt
-  valid  = data/test.txt
-  names = data/obj.names
-  backup = backup/
+classes = 2
+train  = data/train.txt
+valid  = data/test.txt
+names = data/obj.names
+backup = backup/
   ```
 
 4. Put image-files (.jpg) of your objects in the directory `build\darknet\x64\data\obj\`
@@ -450,6 +466,7 @@ It will create `.txt`-file for each `.jpg`-image-file - in the same directory an
 `<object-class> <x_center> <y_center> <width> <height>`
 
   Where: 
+
   * `<object-class>` - integer object number from `0` to `(classes-1)`
   * `<x_center> <y_center> <width> <height>` - float values **relative** to width and height of image, it can be equal from `(0.0 to 1.0]`
   * for example: `<x> = <absolute_x> / <image_width>` or `<height> = <absolute_height> / <image_height>`
@@ -458,32 +475,32 @@ It will create `.txt`-file for each `.jpg`-image-file - in the same directory an
   For example for `img1.jpg` you will be created `img1.txt` containing:
 
   ```
-  1 0.716797 0.395833 0.216406 0.147222
-  0 0.687109 0.379167 0.255469 0.158333
-  1 0.420312 0.395833 0.140625 0.166667
+1 0.716797 0.395833 0.216406 0.147222
+0 0.687109 0.379167 0.255469 0.158333
+1 0.420312 0.395833 0.140625 0.166667
   ```
 
 6. Create file `train.txt` in directory `build\darknet\x64\data\`, with filenames of your images, each filename in new line, with path relative to `darknet.exe`, for example containing:
 
   ```
-  data/obj/img1.jpg
-  data/obj/img2.jpg
-  data/obj/img3.jpg
+data/obj/img1.jpg
+data/obj/img2.jpg
+data/obj/img3.jpg
   ```
 
 7. Download pre-trained weights for the convolutional layers and put to the directory `build\darknet\x64`
-    * for `yolov4.cfg`, `yolov4-custom.cfg` (162 MB): [yolov4.conv.137](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137) (Google drive mirror [yolov4.conv.137](https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp) )
-    * for `yolov4-tiny.cfg`, `yolov4-tiny-3l.cfg`, `yolov4-tiny-custom.cfg` (19 MB): [yolov4-tiny.conv.29](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.conv.29)  
-    * for `csresnext50-panet-spp.cfg` (133 MB): [csresnext50-panet-spp.conv.112](https://drive.google.com/file/d/16yMYCLQTY_oDlCIZPfn_sab6KD3zgzGq/view?usp=sharing)
-    * for `yolov3.cfg, yolov3-spp.cfg` (154 MB): [darknet53.conv.74](https://pjreddie.com/media/files/darknet53.conv.74)
-    * for `yolov3-tiny-prn.cfg , yolov3-tiny.cfg` (6 MB): [yolov3-tiny.conv.11](https://drive.google.com/file/d/18v36esoXCh-PsOKwyP2GWrpYDptDY8Zf/view?usp=sharing)
-    * for `enet-coco.cfg (EfficientNetB0-Yolov3)` (14 MB): [enetb0-coco.conv.132](https://drive.google.com/file/d/1uhh3D6RSn0ekgmsaTcl-ZW53WBaUDo6j/view?usp=sharing)
-    
+
+   * for `yolov4.cfg`, `yolov4-custom.cfg` (162 MB): [yolov4.conv.137](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137) (Google drive mirror [yolov4.conv.137](https://drive.google.com/open?id=1JKF-bdIklxOOVy-2Cr5qdvjgGpmGfcbp) )
+   * for `yolov4-tiny.cfg`, `yolov4-tiny-3l.cfg`, `yolov4-tiny-custom.cfg` (19 MB): [yolov4-tiny.conv.29](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.conv.29)  
+   * for `csresnext50-panet-spp.cfg` (133 MB): [csresnext50-panet-spp.conv.112](https://drive.google.com/file/d/16yMYCLQTY_oDlCIZPfn_sab6KD3zgzGq/view?usp=sharing)
+   * for `yolov3.cfg, yolov3-spp.cfg` (154 MB): [darknet53.conv.74](https://pjreddie.com/media/files/darknet53.conv.74)
+   * for `yolov3-tiny-prn.cfg , yolov3-tiny.cfg` (6 MB): [yolov3-tiny.conv.11](https://drive.google.com/file/d/18v36esoXCh-PsOKwyP2GWrpYDptDY8Zf/view?usp=sharing)
+   * for `enet-coco.cfg (EfficientNetB0-Yolov3)` (14 MB): [enetb0-coco.conv.132](https://drive.google.com/file/d/1uhh3D6RSn0ekgmsaTcl-ZW53WBaUDo6j/view?usp=sharing)
 
 8. Start training by using the command line: `darknet.exe detector train data/obj.data yolo-obj.cfg yolov4.conv.137`
-     
+
    To train on Linux use command: `./darknet detector train data/obj.data yolo-obj.cfg yolov4.conv.137` (just use `./darknet` instead of `darknet.exe`)
-     
+
    * (file `yolo-obj_last.weights` will be saved to the `build\darknet\x64\backup\` for each 100 iterations)
    * (file `yolo-obj_xxxx.weights` will be saved to the `build\darknet\x64\backup\` for each 1000 iterations)
    * (to disable Loss-Window use `darknet.exe detector train data/obj.data yolo-obj.cfg yolov4.conv.137 -dont_show`, if you train on computer without monitor like a cloud Amazon EC2)
@@ -495,29 +512,30 @@ It will create `.txt`-file for each `.jpg`-image-file - in the same directory an
 
  * After each 100 iterations you can stop and later start training from this point. For example, after 2000 iterations you can stop training, and later just start training using: `darknet.exe detector train data/obj.data yolo-obj.cfg backup\yolo-obj_2000.weights`
 
-    (in the original repository https://github.com/pjreddie/darknet the weights-file is saved only once every 10 000 iterations `if(iterations > 1000)`)
+   (in the original repository https://github.com/pjreddie/darknet the weights-file is saved only once every 10 000 iterations `if(iterations > 1000)`)
 
  * Also you can get result earlier than all 45000 iterations.
- 
+
  **Note:** If during training you see `nan` values for `avg` (loss) field - then training goes wrong, but if `nan` is in some other lines - then training goes well.
- 
+
  **Note:** If you changed width= or height= in your cfg-file, then new width and height must be divisible by 32.
- 
+
  **Note:** After training use such command for detection: `darknet.exe detector test data/obj.data yolo-obj.cfg yolo-obj_8000.weights`
- 
+
   **Note:** if error `Out of memory` occurs then in `.cfg`-file you should increase `subdivisions=16`, 32 or 64: [link](https://github.com/AlexeyAB/darknet/blob/0039fd26786ab5f71d5af725fc18b3f521e7acfd/cfg/yolov3.cfg#L4)
- 
+
 ### How to train tiny-yolo (to detect your custom objects):
 
 Do all the same steps as for the full yolo model as described above. With the exception of:
+
 * Download file with the first 29-convolutional layers of yolov4-tiny: https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.conv.29
- (Or get this file from yolov4-tiny.weights file by using command: `darknet.exe partial cfg/yolov4-tiny-custom.cfg yolov4-tiny.weights yolov4-tiny.conv.29 29`
+  (Or get this file from yolov4-tiny.weights file by using command: `darknet.exe partial cfg/yolov4-tiny-custom.cfg yolov4-tiny.weights yolov4-tiny.conv.29 29`
 * Make your custom model `yolov4-tiny-obj.cfg` based on `cfg/yolov4-tiny-custom.cfg` instead of `yolov4.cfg`
 * Start training: `darknet.exe detector train data/obj.data yolov4-tiny-obj.cfg yolov4-tiny.conv.29`
 
 For training Yolo based on other models ([DenseNet201-Yolo](https://github.com/AlexeyAB/darknet/blob/master/build/darknet/x64/densenet201_yolo.cfg) or [ResNet50-Yolo](https://github.com/AlexeyAB/darknet/blob/master/build/darknet/x64/resnet50_yolo.cfg)), you can download and get pre-trained weights as showed in this file: https://github.com/AlexeyAB/darknet/blob/master/build/darknet/x64/partial.cmd
 If you made you custom model that isn't based on other models, then you can train it without pre-trained weights, then will be used random initial weights.
- 
+
 ## When should I stop training:
 
 Usually sufficient 2000 iterations for each class(object), but not less than number of training images and not less than 6000 iterations in total. But for a more precise definition when you should stop training, use the following manual:
@@ -534,7 +552,7 @@ Usually sufficient 2000 iterations for each class(object), but not less than num
   * **0.60730 avg** - average loss (error) - **the lower, the better**
 
   When you see that average loss **0.xxxxxx avg** no longer decreases at many iterations then you should stop training. The final avgerage loss can be from `0.05` (for a small model and easy dataset) to `3.0` (for a big model and a difficult dataset).
-  
+
   Or if you train with flag `-map` then you will see mAP indicator `Last accuracy mAP@0.5 = 18.50%` in the console - this indicator is better than Loss, so train while mAP increases. 
 
 2. Once training is stopped, you should take some of last `.weights`-files from `darknet\build\darknet\x64\backup` and choose the best of them:
@@ -588,7 +606,7 @@ In terms of Wiki, indicators Precision and Recall have a slightly different mean
 Example of custom object detection: `darknet.exe detector test data/obj.data yolo-obj.cfg yolo-obj_8000.weights`
 
 | ![Yolo_v2_training](https://hsto.org/files/d12/1e7/515/d121e7515f6a4eb694913f10de5f2b61.jpg) | ![Yolo_v2_training](https://hsto.org/files/727/c7e/5e9/727c7e5e99bf4d4aa34027bb6a5e4bab.jpg) |
-|---|---|
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 ## How to improve object detection:
 
@@ -609,19 +627,22 @@ Example of custom object detection: `darknet.exe detector test data/obj.data yol
 * What is the best way to mark objects: label only the visible part of the object, or label the visible and overlapped part of the object, or label a little more than the entire object (with a little gap)? Mark as you like - how would you like it to be detected.
 
 * for training with a large number of objects in each image, add the parameter `max=200` or higher value in the last `[yolo]`-layer or `[region]`-layer in your cfg-file (the global maximum number of objects that can be detected by YoloV3 is `0,0615234375*(width*height)` where are width and height are parameters from `[net]` section in cfg-file) 
-  
+
 * for training for small objects (smaller than 16x16 after the image is resized to 416x416) - set `layers = 23` instead of https://github.com/AlexeyAB/darknet/blob/6f718c257815a984253346bba8fb7aa756c55090/cfg/yolov4.cfg#L895
+
   * set `stride=4` instead of https://github.com/AlexeyAB/darknet/blob/6f718c257815a984253346bba8fb7aa756c55090/cfg/yolov4.cfg#L892
   * set `stride=4` instead of https://github.com/AlexeyAB/darknet/blob/6f718c257815a984253346bba8fb7aa756c55090/cfg/yolov4.cfg#L989
-  
+
 * for training for both small and large objects use modified models:
+
   * Full-model: 5 yolo layers: https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov3_5l.cfg
   * Tiny-model: 3 yolo layers: https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4-tiny_3l.cfg
   * YOLOv4: 3 yolo layers: https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4-custom.cfg
-  
+
 * If you train the model to distinguish Left and Right objects as separate classes (left/right hand, left/right-turn on road signs, ...) then for disabling flip data augmentation - add `flip=0` here: https://github.com/AlexeyAB/darknet/blob/3d2d0a7c98dbc8923d9ff705b81ff4f7940ea6ff/cfg/yolov3.cfg#L17
-  
+
 * General rule - your training dataset should include such a set of relative sizes of objects that you want to detect: 
+
   * `train_network_width * train_obj_width / train_image_width ~= detection_network_width * detection_obj_width / detection_image_width`
   * `train_network_height * train_obj_height / train_image_height ~= detection_network_height * detection_obj_height / detection_image_height`
 
@@ -638,8 +659,8 @@ Example of custom object detection: `darknet.exe detector test data/obj.data yol
 * to make the detected bounded boxes more accurate, you can add 3 parameters `ignore_thresh = .9 iou_normalizer=0.5 iou_loss=giou` to each `[yolo]` layer and train, it will increase mAP@0.9, but decrease mAP@0.5.
 
 * Only if you are an **expert** in neural detection networks - recalculate anchors for your dataset for `width` and `height` from cfg-file:
-`darknet.exe detector calc_anchors data/obj.data -num_of_clusters 9 -width 416 -height 416`
-then set the same 9 `anchors` in each of 3 `[yolo]`-layers in your cfg-file. But you should change indexes of anchors `masks=` for each [yolo]-layer, so for YOLOv4 the 1st-[yolo]-layer has anchors smaller than 30x30, 2nd smaller than 60x60, 3rd remaining, and vice versa for YOLOv3. Also you should change the `filters=(classes + 5)*<number of mask>` before each [yolo]-layer. If many of the calculated anchors do not fit under the appropriate layers - then just try using all the default anchors.
+  `darknet.exe detector calc_anchors data/obj.data -num_of_clusters 9 -width 416 -height 416`
+  then set the same 9 `anchors` in each of 3 `[yolo]`-layers in your cfg-file. But you should change indexes of anchors `masks=` for each [yolo]-layer, so for YOLOv4 the 1st-[yolo]-layer has anchors smaller than 30x30, 2nd smaller than 60x60, 3rd remaining, and vice versa for YOLOv3. Also you should change the `filters=(classes + 5)*<number of mask>` before each [yolo]-layer. If many of the calculated anchors do not fit under the appropriate layers - then just try using all the default anchors.
 
 2. After training - for detection:
 
@@ -691,18 +712,18 @@ There are 2 APIs:
 ----
 
 1. To compile Yolo as C++ DLL-file `yolo_cpp_dll.dll` - open the solution `build\darknet\yolo_cpp_dll.sln`, set **x64** and **Release**, and do the: Build -> Build yolo_cpp_dll
-    * You should have installed **CUDA 10.0**
-    * To use cuDNN do: (right click on project) -> properties -> C/C++ -> Preprocessor -> Preprocessor Definitions, and add at the beginning of line: `CUDNN;`
+   * You should have installed **CUDA 10.0**
+   * To use cuDNN do: (right click on project) -> properties -> C/C++ -> Preprocessor -> Preprocessor Definitions, and add at the beginning of line: `CUDNN;`
 
 2. To use Yolo as DLL-file in your C++ console application - open the solution `build\darknet\yolo_console_dll.sln`, set **x64** and **Release**, and do the: Build -> Build yolo_console_dll
 
-    * you can run your console application from Windows Explorer `build\darknet\x64\yolo_console_dll.exe`
-    **use this command**: `yolo_console_dll.exe data/coco.names yolov4.cfg yolov4.weights test.mp4`
+   * you can run your console application from Windows Explorer `build\darknet\x64\yolo_console_dll.exe`
+     **use this command**: `yolo_console_dll.exe data/coco.names yolov4.cfg yolov4.weights test.mp4`
 
-    * after launching your console application and entering the image file name - you will see info for each object: 
-    `<obj_id> <left_x> <top_y> <width> <height> <probability>`
-    * to use simple OpenCV-GUI you should uncomment line `//#define OPENCV` in `yolo_console_dll.cpp`-file: [link](https://github.com/AlexeyAB/darknet/blob/a6cbaeecde40f91ddc3ea09aa26a03ab5bbf8ba8/src/yolo_console_dll.cpp#L5)
-    * you can see source code of simple example for detection on the video file: [link](https://github.com/AlexeyAB/darknet/blob/ab1c5f9e57b4175f29a6ef39e7e68987d3e98704/src/yolo_console_dll.cpp#L75)
+   * after launching your console application and entering the image file name - you will see info for each object: 
+     `<obj_id> <left_x> <top_y> <width> <height> <probability>`
+   * to use simple OpenCV-GUI you should uncomment line `//#define OPENCV` in `yolo_console_dll.cpp`-file: [link](https://github.com/AlexeyAB/darknet/blob/a6cbaeecde40f91ddc3ea09aa26a03ab5bbf8ba8/src/yolo_console_dll.cpp#L5)
+   * you can see source code of simple example for detection on the video file: [link](https://github.com/AlexeyAB/darknet/blob/ab1c5f9e57b4175f29a6ef39e7e68987d3e98704/src/yolo_console_dll.cpp#L75)
 
 `yolo_cpp_dll.dll`-API: [link](https://github.com/AlexeyAB/darknet/blob/master/src/yolo_v2_class.hpp#L42)
 
